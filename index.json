@@ -1,0 +1,11 @@
+{
+  "org": "android10",
+  "repo": "Android-CleanArchitecture-Kotlin",
+  "versions": [
+    {
+      "commit": "e11746a29b1b83ba7bb01943e8876fb4c50ad08c",
+      "tag": "",
+      "parsed_at": "2026-11-09T17:40:43.957462+00:00"
+    }
+  ]
+}

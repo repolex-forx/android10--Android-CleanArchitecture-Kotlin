@@ -1,1 +1,182 @@
-Initializing
+# Repolex Knowledge Graph of android10/Android-CleanArchitecture-Kotlin
+
+RDF knowledge graph data for [android10/Android-CleanArchitecture-Kotlin](https://github.com/android10/Android-CleanArchitecture-Kotlin), parsed by [repolex](https://repolex.ai).
+
+> **Note**: This data is experimental and subject to change without notice.
+
+## How to use this data
+
+The easiest way to get started is to install the [rlex](https://github.com/repolex-ai/rlex) query tool:
+
+```bash
+cargo install --git https://github.com/repolex-ai/rlex
+```
+
+Verify the install:
+
+```bash
+rlex --help
+```
+
+**rlex is designed to be used primarily by LLMs in a terminal.** Start up your favorite AI assistant and ask it to use rlex. It handles the SPARQL — you just ask questions in plain English.
+
+To load this repo's data:
+
+```bash
+rlex download android10/Android-CleanArchitecture-Kotlin
+```
+
+Consult `rlex --help` for other options, including SPARQL queries, HTTP server, and interactive visualization.
+
+## Data structure
+
+All data is stored as gzip-compressed [N-Quads](https://www.w3.org/TR/n-quads/) (`.nq.gz`), a standard RDF format that can be loaded into any triplestore or graph database.
+
+```
+.
+├── aggregate
+│   ├── ast
+│   │   └── e11746a29b1b83ba7bb01943e8876fb4c50ad08c
+│   │       └── chunk-001.nq.gz
+│   └── repolex
+│       └── e11746a29b1b83ba7bb01943e8876fb4c50ad08c
+│           └── chunk-001.nq.gz
+├── blob
+│   ├── 017a601aa666b994f11161d03b5bb2af10fe5e04.nq.gz
+│   ├── 07959ea046f55073e3f137650d5dae5505fcbab7.nq.gz
+│   ├── 09d60978d27d01e9ee23c7548eafdcef3e3518b1.nq.gz
+│   ├── 0d67816d599c0cd96beb34446926b4e180f8e3fd.nq.gz
+│   ├── 10a53ef639dfd657c97d572fe761f4db1fbd24d3.nq.gz
+│   ├── 1299db2f8cba748dd609163d47bbee62e83b1124.nq.gz
+│   ├── 1a257f497c7de0f71ef42d41f90b5b331f34f7f2.nq.gz
+│   ├── 1e9961144360a5a2d647905b14af994b792f5279.nq.gz
+│   ├── 23b12e4dc58563f4a18e738f685c3f87739a6f92.nq.gz
+│   ├── 24006aa1d1025176665b320212aaff898399d142.nq.gz
+│   ├── 24939db9380be97b16c63e58cbf3a8fe36c4ba7f.nq.gz
+│   ├── 2852695e819395a71332b752480075a570a02909.nq.gz
+│   ├── 2955fcedce857757245446693a48bcc4b2506fa7.nq.gz
+│   ├── 2ca8aa3599d90fef473f9f24814aa4091f8cffd3.nq.gz
+│   ├── 2e435fbf7317466d1d6a234b2076ec13eb2b615e.nq.gz
+│   ├── 2e9ad3dc076fa2caf9bf3f029891948de668e1f8.nq.gz
+│   ├── 2f470f17d721ec482ac799e24e3bb9fba1ec86e6.nq.gz
+│   ├── 2fd1c041bd554432e0ddf7494ecbdcee771d3381.nq.gz
+│   ├── 32085b768f33d090ba35a2433159c59781607872.nq.gz
+│   ├── 32e5c8a5b3e4d71480f024cd281de6e8bd0bd6e1.nq.gz
+│   ├── 352c31e8c9660a148d0fdb3435e6343cffb5102c.nq.gz
+│   ├── 35dc5b9c66a5373421f0aec00a18ecf1ce567087.nq.gz
+│   ├── 3a1de9d3e680b31435ed80dd9a3504d4e2d3e21f.nq.gz
+│   ├── 3e9e6b994d3b7b8dfd4c2a2860334f5cec56eed9.nq.gz
+│   ├── 3f43429804860fd9626825dfca57a24d0e9ce535.nq.gz
+│   ├── 40b18e11be29dcc2f64e1626c4878e3362bece1a.nq.gz
+│   ├── 418f91085c0fe75a8cf8a4716e9621783b90b5d2.nq.gz
+│   ├── 421440d4921c7ed555f9f0fec1a48db5d1e4aed9.nq.gz
+│   ├── 438a214c2aed8467d725611aa6305565847da706.nq.gz
+│   ├── 443428119b3f71f64b92660832a49bf0e843fc3d.nq.gz
+│   ├── 49edcf396361263c7f7d663b32286edcc52e15ef.nq.gz
+│   ├── 4a7e73e6f76ffc290090635d897649236ba2ed00.nq.gz
+│   ├── 4eaec467050c6413c26660c1728696f9224a47d5.nq.gz
+│   ├── 5079a98deb880c7afe68f51c19a7957c8d313720.nq.gz
+│   ├── 508579591d222ed27c16c948f4a851fa0fe7b28d.nq.gz
+│   ├── 51631bfd1219db4919cf636344f0e33cfd24750e.nq.gz
+│   ├── 537f61c745fd318a2043800ffe3fb1a43b2c8950.nq.gz
+│   ├── 5a05c821cbbc93cef66fd00584d05418f59fe637.nq.gz
+│   ├── 5a3764fe7e41455bf8f2e315ab4e5216da41b630.nq.gz
+│   ├── 5b61f028214921b4d8d5f8d9d7d76be7cf910ef8.nq.gz
+│   ├── 5dafc7cbd9ca3a57c61aad160448e576b87a0c62.nq.gz
+│   ├── 62e59e982a9ee3262e5ede155d1105c8d355f052.nq.gz
+│   ├── 63fc816444614bd64f68a372d1f93211628ee51d.nq.gz
+│   ├── 64c2c21e5aaf6f207df57dca10e007917f163f6f.nq.gz
+│   ├── 6689b85beecde676054c39c2408085f41e6be6dc.nq.gz
+│   ├── 6a8e277e168dd27f413dac347f58e73fc6e02d40.nq.gz
+│   ├── 6acab4723f2afd7f7015710a5fd35294a45f075e.nq.gz
+│   ├── 6c0aceb2dcfb9bd737e27f9ce00075ec5445a911.nq.gz
+│   ├── 6ebc631904912864e711fa6e125e0adc523b67c3.nq.gz
+│   ├── 7443c3b1e1580fd88305e90c7a211ed1808efb91.nq.gz
+│   ├── 746652284e4044d3b14af21c75269948619b9d10.nq.gz
+│   ├── 77f90bc8c5509524a90a194a30d813e68c81485e.nq.gz
+│   ├── 7800c516d94a1acb680ca8e8d725e3c5984f4b44.nq.gz
+│   ├── 788b92c49f4aaa4b2f06c31089b333c600afdab1.nq.gz
+│   ├── 796b96d1c402326528b4ba3c12ee9d92d0e212e9.nq.gz
+│   ├── 80a151ef933f6fa90fb868b78da9e5e28911c884.nq.gz
+│   ├── 8492006001cf87aee85e065f603f1bc1ad076bae.nq.gz
+│   ├── 84b32378a2759197efe57c9aef41ec0ea707260e.nq.gz
+│   ├── 870b916e88bdee9749cb5c08822b58c4d7ef6eb6.nq.gz
+│   ├── 8b137891791fe96927ad78e64b0aad7bded08bdc.nq.gz
+│   ├── 8c204153ae9e50dec2e59a7684af6cfdf4134486.nq.gz
+│   ├── 8d96b0c968c20e81b27e61cbac37ab6b9a6c6c2a.nq.gz
+│   ├── 8e63a50604cb339796b51cdc3f45d0bdabce9225.nq.gz
+│   ├── 8e8b9394b3c63d970a2a2d8ca52de17e4373d754.nq.gz
+│   ├── 8eb8d599dbf26c24ca65c774881cb872eed3c9bf.nq.gz
+│   ├── 8f8e3b7d404e3d76887b4dd61d9d8955a38e57cf.nq.gz
+│   ├── 92511844351819777c73edd959f1ae9458b539f5.nq.gz
+│   ├── 926851e5aee1136ce8b7cf1a9fe27b1040ba56a6.nq.gz
+│   ├── 9337451ecdcfb9748c71aade3fc9212d9544f20e.nq.gz
+│   ├── 93d7c5290130f7eb57fa7b88be23dcb0e398d8c9.nq.gz
+│   ├── 976d2f006cf501bf93dc90c0069cd2f66e0ff6b5.nq.gz
+│   ├── 9dea787ca6342c2ed84a2350ab33cfe02de86e29.nq.gz
+│   ├── a763f020ec382902f924fbe67a667b9f2d4652f6.nq.gz
+│   ├── aa9a3a27dc8ea8c8ce0c5a7aeae48ca92313df23.nq.gz
+│   ├── aeb74cbb43e3931a2455a838345c3f6b8131aaa2.nq.gz
+│   ├── b3116af457544e0a90a13c3d2feb8c2b1bed0cb7.nq.gz
+│   ├── ba33dae837514f07199d63735a34d1e246c74f34.nq.gz
+│   ├── ba7b1e9ed564cdb344c06a192af6b27b89c46cbd.nq.gz
+│   ├── bb0d68c4cb135f723710f6af78d6b72f5c430de5.nq.gz
+│   ├── bbcccbf0ee808540011011ccef0ec79db7da61df.nq.gz
+│   ├── bd15996e955d60fdb698e2fe146554717d5044e4.nq.gz
+│   ├── bda2cd526ba550dbd05aaf53257d5cc1ead76323.nq.gz
+│   ├── bfea13519935ff974b7a3e576d996507e605cf50.nq.gz
+│   ├── c1065919c40906d5765a08e20595dfcb3c5d9377.nq.gz
+│   ├── c1962a79e29d3e0ab67b14947c167a862655af9b.nq.gz
+│   ├── caa83b104b870f3c1ffbe74c2ec98bb8411917e3.nq.gz
+│   ├── cc46a731b76908fad11e5742a480152700b60139.nq.gz
+│   ├── d83fc62b689e46c8b1ef85740a3588ce811295be.nq.gz
+│   ├── da0df406955c4f3068c9bf6f181c7fdcbedee1bb.nq.gz
+│   ├── da560bc61b41b9c65e498fd6044298476925aca8.nq.gz
+│   ├── db363e99d89eba84ba9c83ffdb532a60cd917827.nq.gz
+│   ├── dbe6c31c1f80d5b92ca1f4446718ca5c198fb2c8.nq.gz
+│   ├── dd87429d7fc939c5f447b9db0d8092271732764b.nq.gz
+│   ├── df84ff04014f1b0aaff08b58f7ca8edb508d1edb.nq.gz
+│   ├── df8a3e1e205dc8ea8f1e43f0e1bfe68c62a6fce7.nq.gz
+│   ├── e164a479830f17eed7125df12765c0368dcdc34b.nq.gz
+│   ├── e52b32fa2e09fdf8f9f2a6f8bc9c33b3634666e9.nq.gz
+│   ├── e6c7425df7af2ecae111ae85d67e3188a967ef3c.nq.gz
+│   ├── e7b73ba1256575a55a25a8bff0148961f6248e1b.nq.gz
+│   ├── e89b5dbbd915fd04857f992376886ad905512cb1.nq.gz
+│   ├── f94626c82bcd0bb5295e678d842c4fdbdab6f187.nq.gz
+│   ├── f9cf116f7446899027658f3212f99711b0fdcc91.nq.gz
+│   └── fcc39971e367063bdd9747d4640c49f55f2867ad.nq.gz
+├── branch
+│   └── branch.nq.gz
+├── commit
+│   └── commit.nq.gz
+├── filetree
+│   └── e11746a29b1b83ba7bb01943e8876fb4c50ad08c.nq.gz
+├── issue
+│   └── issue.nq.gz
+├── pr
+│   └── pr.nq.gz
+└── tag
+    └── tag.nq.gz
+
+13 directories, 111 files
+```
+
+| Directory | What it contains |
+|-----------|-----------------|
+| `blob/` | Per-file AST graphs, content-addressed by git blob SHA. Each file in the source repo gets its own graph. |
+| `aggregate/ast/` | Combined AST graph per parsed commit. Merges all blob graphs for a snapshot of the entire codebase at that point. |
+| `aggregate/lsp/` | Language Server Protocol enrichment: resolved symbols, definitions, references, and type information. |
+| `aggregate/dataflow/` | Interprocedural data flow edges between functions and modules. |
+| `aggregate/repolex/` | Combined graph (AST + LSP + dataflow) per commit. |
+| `commit/` | Git commit metadata (author, date, message, parent links). |
+| `branch/` | Branch metadata. |
+| `tag/` | Tag metadata. |
+| `filetree/` | File tree snapshots per commit (which files existed and their blob SHAs). |
+| `audit/` | Code architecture and graph audit reports per commit. |
+
+## Source repository
+
+[android10/Android-CleanArchitecture-Kotlin](https://github.com/android10/Android-CleanArchitecture-Kotlin)
+
+---
+*Parsed on 2026-11-09 by [repolex](https://repolex.ai)*
