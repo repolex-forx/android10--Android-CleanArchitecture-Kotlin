@@ -8,7 +8,7 @@
     {
       "@id": "https://repolex.ai/r/android10/Android-CleanArchitecture-Kotlin/commit/e11746a29b1b83ba7bb01943e8876fb4c50ad08c",
       "git:hexsha": "e11746a29b1b83ba7bb01943e8876fb4c50ad08c",
-      "repolex:parseStatus": "metadata_complete"
+      "repolex:parseStatus": "ast_complete"
     }
   ]
 }
